@@ -153,7 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runtimeConfigurationName: Innoactive.Creator.Core.Configuration.DefaultRuntimeConfiguration,
     Innoactive.Creator.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  selectedCourse: 
+  selectedCourse: Training\BranchingExample\BranchingExample.json
 --- !u!4 &139556878
 Transform:
   m_ObjectHideFlags: 0
@@ -2719,7 +2719,8 @@ MonoBehaviour:
   m_OnDeactivate:
     m_PersistentCalls:
       m_Calls: []
-  m_CustomReticle: {fileID: 0}
+  m_CustomReticle: {fileID: 3819676577015031517, guid: c9ea54082e6151843acb776fb52ed6f7,
+    type: 3}
   m_TeleportationProvider: {fileID: 0}
   m_MatchOrientation: 0
   m_TeleportTrigger: 0
@@ -2968,7 +2969,7 @@ MonoBehaviour:
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 12087
   m_OnFirstHoverEnter:
     m_PersistentCalls:
       m_Calls: []
@@ -3160,7 +3161,7 @@ MonoBehaviour:
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 7991
   m_OnFirstHoverEnter:
     m_PersistentCalls:
       m_Calls: []
