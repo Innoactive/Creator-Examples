@@ -1,0 +1,18 @@
+[submodule "Assets/Innoactive/Creator/Core"]
+	path = Assets/Innoactive/Creator/Core
+	url = git@github.com:Innoactive/Creator.git
+[submodule "Assets/Innoactive/Creator/Basic-Template"]
+	path = Assets/Innoactive/Creator/Basic-Template
+	url = git@github.com:Innoactive/IA-Training-Template.git
+[submodule "Assets/Innoactive/Creator/Components/Basic-Conditions-And-Behaviors"]
+	path = Assets/Innoactive/Creator/Components/Basic-Conditions-And-Behaviors
+	url = git@github.com:Innoactive/Basic-Conditions-And-Behaviors.git
+[submodule "Assets/Innoactive/Creator/Components/Basic-Interactions"]
+	path = Assets/Innoactive/Creator/Components/Basic-Interactions
+	url = git@github.com:Innoactive/Basic-Interaction-Component.git
+[submodule "Assets/Innoactive/Creator/Components/TextToSpeech"]
+	path = Assets/Innoactive/Creator/Components/TextToSpeech
+	url = git@github.com:Innoactive/TextToSpeech-Component.git
+[submodule "Assets/Innoactive/Creator/Components/XR-Interactions"]
+	path = Assets/Innoactive/Creator/Components/XR-Interactions
+	url = git@github.com:Innoactive/XR-Interaction-Component.git
