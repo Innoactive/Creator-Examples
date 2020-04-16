@@ -497,7 +497,7 @@ MonoBehaviour:
   m_InteractableHoverMeshMaterial: {fileID: 2100000, guid: bb64f82586715f94d999bce060dc24b2,
     type: 2}
   m_SocketActive: 1
-  m_InteractableHoverScale: 1
+  m_InteractableHoverScale: 2
   m_RecycleDelayTime: 1
   shownHighlightObject: {fileID: 1112515239710982, guid: bd53227e112aa2b448524e9451037b69,
     type: 3}
