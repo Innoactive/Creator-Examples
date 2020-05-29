@@ -6,7 +6,7 @@ This repository is a showcase for the [Innoactive Creator](https://github.com/In
 
 Refer to our [Getting Started](http://developers.innoactive.de/documentation/creator/latest/articles/getting-started/index.html) guide.
 
-As a developer, you might want to clone this repositoriy instead of importing the Unity package. Given that you have launched Git BASH inside the folder you want to have this Unity project, execute the following command:
+As a developer, you might want to clone this repository instead of importing the Unity package. Given that you have launched Git BASH inside the folder you want to have this Unity project, execute the following command:
 
 ```
 git clone --recurse-submodules -j8 git@github.com:Innoactive/XR-Creator-Examples.git
