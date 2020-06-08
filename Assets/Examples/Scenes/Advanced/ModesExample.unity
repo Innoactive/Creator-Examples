@@ -374,7 +374,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runtimeConfigurationName: Innoactive.Hub.Training.Examples.Configuration.ModesExampleRuntimeConfiguration,
     Innoactive.Creator.Examples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  selectedCourseStreamingAssetsPath: 
+  selectedCourseStreamingAssetsPath: Training/ModesExample/ModesExample.json
 --- !u!4 &139556878
 Transform:
   m_ObjectHideFlags: 0

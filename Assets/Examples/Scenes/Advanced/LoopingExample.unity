@@ -185,7 +185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runtimeConfigurationName: Innoactive.Creator.Core.Configuration.DefaultRuntimeConfiguration,
     Innoactive.Creator.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  selectedCourseStreamingAssetsPath: 
+  selectedCourseStreamingAssetsPath: Training/LoopingExample/LoopingExample.json
 --- !u!4 &139556878
 Transform:
   m_ObjectHideFlags: 0
