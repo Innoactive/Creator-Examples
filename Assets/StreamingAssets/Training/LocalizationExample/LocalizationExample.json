@@ -95,7 +95,7 @@
                                     "GrabbableProperty": {
                                       "$id": "23",
                                       "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.BasicInteraction.Properties.IGrabbableProperty, Innoactive.Creator.BasicInteraction]], Innoactive.Creator.Core",
-                                      "UniqueName": ""
+                                      "UniqueName": "Sphere"
                                     },
                                     "IsCompleted": false,
                                     "Name": "Grab Sphere",

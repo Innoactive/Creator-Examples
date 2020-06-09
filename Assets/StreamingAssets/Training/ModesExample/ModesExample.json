@@ -116,12 +116,12 @@
                                     "Target": {
                                       "$id": "26",
                                       "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.BasicInteraction.Properties.ISnappableProperty, Innoactive.Creator.BasicInteraction]], Innoactive.Creator.Core",
-                                      "UniqueName": "31642"
+                                      "UniqueName": "Cube"
                                     },
                                     "ZoneToSnapInto": {
                                       "$id": "27",
                                       "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.BasicInteraction.Properties.ISnapZoneProperty, Innoactive.Creator.BasicInteraction]], Innoactive.Creator.Core",
-                                      "UniqueName": ""
+                                      "UniqueName": "CubeSnapZone"
                                     },
                                     "Name": "Snap Object",
                                     "Metadata": null
