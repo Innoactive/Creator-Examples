@@ -645,7 +645,7 @@
                             "Duration": 15.0,
                             "ExecutionStages": 1,
                             "Metadata": null,
-                            "Name": null
+                            "Name": "Spawn Confetti"
                           }
                         },
                         {
