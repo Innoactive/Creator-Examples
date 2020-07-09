@@ -30,7 +30,7 @@
                 "$id": "8",
                 "$type": "Innoactive.Creator.Core.Step+EntityData, Innoactive.Creator.Core",
                 "Name": "End",
-                "Description": null,
+                "Description": "Both objects are where they are supposed to be.",
                 "Behaviors": {
                   "$id": "9",
                   "$type": "Innoactive.Creator.Core.BehaviorCollection, Innoactive.Creator.Core",
@@ -150,6 +150,11 @@
                 },
                 "Current": null,
                 "Mode": null,
+                "ToUnlock": {
+                  "$id": "31",
+                  "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Behaviors.LockablePropertyReference, Innoactive.Creator.Core]], mscorlib",
+                  "$values": []
+                },
                 "Metadata": null
               }
             },
@@ -159,14 +164,14 @@
             }
           },
           "Data": {
-            "$id": "31",
+            "$id": "32",
             "$type": "Innoactive.Creator.Core.Chapter+EntityData, Innoactive.Creator.Core",
             "Name": "Chapter 1",
             "FirstStep": {
-              "$id": "32",
+              "$id": "33",
               "$type": "Innoactive.Creator.Core.Step, Innoactive.Creator.Core",
               "StepMetadata": {
-                "$id": "33",
+                "$id": "34",
                 "$type": "Innoactive.Creator.Core.StepMetadata, Innoactive.Creator.Core",
                 "Position": {
                   "x": 154.0,
@@ -174,28 +179,28 @@
                 }
               },
               "Data": {
-                "$id": "34",
+                "$id": "35",
                 "$type": "Innoactive.Creator.Core.Step+EntityData, Innoactive.Creator.Core",
                 "Name": "Snap Objects",
-                "Description": null,
+                "Description": "One of the objects has to be brought to its position.",
                 "Behaviors": {
-                  "$id": "35",
+                  "$id": "36",
                   "$type": "Innoactive.Creator.Core.BehaviorCollection, Innoactive.Creator.Core",
                   "Data": {
-                    "$id": "36",
+                    "$id": "37",
                     "$type": "Innoactive.Creator.Core.BehaviorCollection+EntityData, Innoactive.Creator.Core",
                     "Behaviors": {
-                      "$id": "37",
+                      "$id": "38",
                       "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Behaviors.IBehavior, Innoactive.Creator.Core]], mscorlib",
                       "$values": [
                         {
-                          "$id": "38",
+                          "$id": "39",
                           "$type": "Innoactive.Creator.Core.Behaviors.PlayAudioBehavior, Innoactive.Creator.Core",
                           "Data": {
-                            "$id": "39",
+                            "$id": "40",
                             "$type": "Innoactive.Creator.Core.Behaviors.PlayAudioBehavior+EntityData, Innoactive.Creator.Core",
                             "AudioData": {
-                              "$id": "40",
+                              "$id": "41",
                               "$type": "Innoactive.Creator.TextToSpeech.Audio.TextToSpeechAudio, Innoactive.Creator.TextToSpeech",
                               "Text": {
                                 "key": "",
@@ -214,38 +219,38 @@
                   }
                 },
                 "Transitions": {
-                  "$id": "41",
+                  "$id": "42",
                   "$type": "Innoactive.Creator.Core.TransitionCollection, Innoactive.Creator.Core",
                   "Data": {
-                    "$id": "42",
+                    "$id": "43",
                     "$type": "Innoactive.Creator.Core.TransitionCollection+EntityData, Innoactive.Creator.Core",
                     "Transitions": {
-                      "$id": "43",
+                      "$id": "44",
                       "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.ITransition, Innoactive.Creator.Core]], mscorlib",
                       "$values": [
                         {
-                          "$id": "44",
+                          "$id": "45",
                           "$type": "Innoactive.Creator.Core.Transition, Innoactive.Creator.Core",
                           "Data": {
-                            "$id": "45",
+                            "$id": "46",
                             "$type": "Innoactive.Creator.Core.Transition+EntityData, Innoactive.Creator.Core",
                             "Conditions": {
-                              "$id": "46",
+                              "$id": "47",
                               "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Conditions.ICondition, Innoactive.Creator.Core]], mscorlib",
                               "$values": [
                                 {
-                                  "$id": "47",
+                                  "$id": "48",
                                   "$type": "Innoactive.Creator.BasicInteraction.Conditions.SnappedCondition, Innoactive.Creator.BasicInteraction",
                                   "Data": {
-                                    "$id": "48",
+                                    "$id": "49",
                                     "$type": "Innoactive.Creator.BasicInteraction.Conditions.SnappedCondition+EntityData, Innoactive.Creator.BasicInteraction",
                                     "Target": {
-                                      "$id": "49",
+                                      "$id": "50",
                                       "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.BasicInteraction.Properties.ISnappableProperty, Innoactive.Creator.BasicInteraction]], Innoactive.Creator.Core",
                                       "UniqueName": "Sphere"
                                     },
                                     "ZoneToSnapInto": {
-                                      "$id": "50",
+                                      "$id": "51",
                                       "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.BasicInteraction.Properties.ISnapZoneProperty, Innoactive.Creator.BasicInteraction]], Innoactive.Creator.Core",
                                       "UniqueName": "SphereSnapZone"
                                     },
@@ -256,10 +261,10 @@
                               ]
                             },
                             "TargetStep": {
-                              "$id": "51",
+                              "$id": "52",
                               "$type": "Innoactive.Creator.Core.Step, Innoactive.Creator.Core",
                               "StepMetadata": {
-                                "$id": "52",
+                                "$id": "53",
                                 "$type": "Innoactive.Creator.Core.StepMetadata, Innoactive.Creator.Core",
                                 "Position": {
                                   "x": 394.0,
@@ -267,28 +272,28 @@
                                 }
                               },
                               "Data": {
-                                "$id": "53",
+                                "$id": "54",
                                 "$type": "Innoactive.Creator.Core.Step+EntityData, Innoactive.Creator.Core",
                                 "Name": "Snap Cube",
-                                "Description": null,
+                                "Description": "Now the cube has to be put in position.",
                                 "Behaviors": {
-                                  "$id": "54",
+                                  "$id": "55",
                                   "$type": "Innoactive.Creator.Core.BehaviorCollection, Innoactive.Creator.Core",
                                   "Data": {
-                                    "$id": "55",
+                                    "$id": "56",
                                     "$type": "Innoactive.Creator.Core.BehaviorCollection+EntityData, Innoactive.Creator.Core",
                                     "Behaviors": {
-                                      "$id": "56",
+                                      "$id": "57",
                                       "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Behaviors.IBehavior, Innoactive.Creator.Core]], mscorlib",
                                       "$values": [
                                         {
-                                          "$id": "57",
+                                          "$id": "58",
                                           "$type": "Innoactive.Creator.Core.Behaviors.PlayAudioBehavior, Innoactive.Creator.Core",
                                           "Data": {
-                                            "$id": "58",
+                                            "$id": "59",
                                             "$type": "Innoactive.Creator.Core.Behaviors.PlayAudioBehavior+EntityData, Innoactive.Creator.Core",
                                             "AudioData": {
-                                              "$id": "59",
+                                              "$id": "60",
                                               "$type": "Innoactive.Creator.TextToSpeech.Audio.TextToSpeechAudio, Innoactive.Creator.TextToSpeech",
                                               "Text": {
                                                 "key": "",
@@ -299,7 +304,7 @@
                                             "ExecutionStages": 1,
                                             "Metadata": null,
                                             "Name": "Play Audio",
-                                            "IsBlocking": true
+                                            "IsBlocking": false
                                           }
                                         }
                                       ]
@@ -307,38 +312,38 @@
                                   }
                                 },
                                 "Transitions": {
-                                  "$id": "60",
+                                  "$id": "61",
                                   "$type": "Innoactive.Creator.Core.TransitionCollection, Innoactive.Creator.Core",
                                   "Data": {
-                                    "$id": "61",
+                                    "$id": "62",
                                     "$type": "Innoactive.Creator.Core.TransitionCollection+EntityData, Innoactive.Creator.Core",
                                     "Transitions": {
-                                      "$id": "62",
+                                      "$id": "63",
                                       "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.ITransition, Innoactive.Creator.Core]], mscorlib",
                                       "$values": [
                                         {
-                                          "$id": "63",
+                                          "$id": "64",
                                           "$type": "Innoactive.Creator.Core.Transition, Innoactive.Creator.Core",
                                           "Data": {
-                                            "$id": "64",
+                                            "$id": "65",
                                             "$type": "Innoactive.Creator.Core.Transition+EntityData, Innoactive.Creator.Core",
                                             "Conditions": {
-                                              "$id": "65",
+                                              "$id": "66",
                                               "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Conditions.ICondition, Innoactive.Creator.Core]], mscorlib",
                                               "$values": [
                                                 {
-                                                  "$id": "66",
+                                                  "$id": "67",
                                                   "$type": "Innoactive.Creator.BasicInteraction.Conditions.SnappedCondition, Innoactive.Creator.BasicInteraction",
                                                   "Data": {
-                                                    "$id": "67",
+                                                    "$id": "68",
                                                     "$type": "Innoactive.Creator.BasicInteraction.Conditions.SnappedCondition+EntityData, Innoactive.Creator.BasicInteraction",
                                                     "Target": {
-                                                      "$id": "68",
+                                                      "$id": "69",
                                                       "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.BasicInteraction.Properties.ISnappableProperty, Innoactive.Creator.BasicInteraction]], Innoactive.Creator.Core",
                                                       "UniqueName": "Cube"
                                                     },
                                                     "ZoneToSnapInto": {
-                                                      "$id": "69",
+                                                      "$id": "70",
                                                       "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.BasicInteraction.Properties.ISnapZoneProperty, Innoactive.Creator.BasicInteraction]], Innoactive.Creator.Core",
                                                       "UniqueName": "CubeSnapZone"
                                                     },
@@ -354,40 +359,34 @@
                                             "Mode": null,
                                             "IsCompleted": false,
                                             "Metadata": {
-                                              "$id": "70",
+                                              "$id": "71",
                                               "$type": "Innoactive.Creator.Core.Metadata, Innoactive.Creator.Core",
                                               "values": {
-                                                "$id": "71",
+                                                "$id": "72",
                                                 "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
                                                 "Conditions": {
-                                                  "$id": "72",
+                                                  "$id": "73",
                                                   "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
                                                   "Innoactive.Creator.Core.Attributes.FoldableAttribute": true,
                                                   "Innoactive.Creator.Core.Attributes.SeparatedAttribute": null,
                                                   "Innoactive.Creator.Core.Attributes.ListOfAttribute": {
-                                                    "$id": "73",
+                                                    "$id": "74",
                                                     "$type": "Innoactive.Creator.Core.Attributes.ListOfAttribute+Metadata, Innoactive.Creator.Core",
                                                     "ChildAttributes": {
-                                                      "$id": "74",
+                                                      "$id": "75",
                                                       "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Attributes.MetadataAttribute, Innoactive.Creator.Core]], mscorlib",
                                                       "$values": [
                                                         {
-                                                          "$id": "75",
+                                                          "$id": "76",
                                                           "$type": "Innoactive.Creator.Core.Attributes.FoldableAttribute, Innoactive.Creator.Core",
                                                           "Name": "Innoactive.Creator.Core.Attributes.FoldableAttribute",
                                                           "TypeId": "Innoactive.Creator.Core.Attributes.FoldableAttribute, Innoactive.Creator.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                                                         },
                                                         {
-                                                          "$id": "76",
+                                                          "$id": "77",
                                                           "$type": "Innoactive.Creator.Core.Attributes.DeletableAttribute, Innoactive.Creator.Core",
                                                           "Name": "Innoactive.Creator.Core.Attributes.DeletableAttribute",
                                                           "TypeId": "Innoactive.Creator.Core.Attributes.DeletableAttribute, Innoactive.Creator.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
-                                                        },
-                                                        {
-                                                          "$id": "77",
-                                                          "$type": "Innoactive.Creator.Core.Attributes.SeparatedAttribute, Innoactive.Creator.Core",
-                                                          "Name": "Innoactive.Creator.Core.Attributes.SeparatedAttribute",
-                                                          "TypeId": "Innoactive.Creator.Core.Attributes.SeparatedAttribute, Innoactive.Creator.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                                                         }
                                                       ]
                                                     },
@@ -399,8 +398,7 @@
                                                           "$id": "79",
                                                           "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
                                                           "Innoactive.Creator.Core.Attributes.FoldableAttribute": true,
-                                                          "Innoactive.Creator.Core.Attributes.DeletableAttribute": null,
-                                                          "Innoactive.Creator.Core.Attributes.SeparatedAttribute": null
+                                                          "Innoactive.Creator.Core.Attributes.DeletableAttribute": null
                                                         }
                                                       ]
                                                     }
@@ -421,32 +419,34 @@
                                 },
                                 "Current": null,
                                 "Mode": null,
+                                "ToUnlock": {
+                                  "$id": "81",
+                                  "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Behaviors.LockablePropertyReference, Innoactive.Creator.Core]], mscorlib",
+                                  "$values": []
+                                },
                                 "Metadata": null
                               }
                             },
                             "Mode": null,
                             "IsCompleted": false,
                             "Metadata": {
-                              "$id": "81",
+                              "$id": "82",
                               "$type": "Innoactive.Creator.Core.Metadata, Innoactive.Creator.Core",
                               "values": {
-                                "$id": "82",
+                                "$id": "83",
                                 "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
                                 "Conditions": {
-                                  "$id": "83",
+                                  "$id": "84",
                                   "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
                                   "Innoactive.Creator.Core.Attributes.FoldableAttribute": true,
                                   "Innoactive.Creator.Core.Attributes.SeparatedAttribute": null,
                                   "Innoactive.Creator.Core.Attributes.ListOfAttribute": {
-                                    "$id": "84",
+                                    "$id": "85",
                                     "$type": "Innoactive.Creator.Core.Attributes.ListOfAttribute+Metadata, Innoactive.Creator.Core",
                                     "ChildAttributes": {
-                                      "$id": "85",
+                                      "$id": "86",
                                       "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Attributes.MetadataAttribute, Innoactive.Creator.Core]], mscorlib",
                                       "$values": [
-                                        {
-                                          "$ref": "75"
-                                        },
                                         {
                                           "$ref": "76"
                                         },
@@ -456,21 +456,20 @@
                                       ]
                                     },
                                     "ChildMetadata": {
-                                      "$id": "86",
+                                      "$id": "87",
                                       "$type": "System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
                                       "$values": [
                                         {
-                                          "$id": "87",
+                                          "$id": "88",
                                           "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
                                           "Innoactive.Creator.Core.Attributes.FoldableAttribute": true,
-                                          "Innoactive.Creator.Core.Attributes.DeletableAttribute": null,
-                                          "Innoactive.Creator.Core.Attributes.SeparatedAttribute": null
+                                          "Innoactive.Creator.Core.Attributes.DeletableAttribute": null
                                         }
                                       ]
                                     }
                                   },
                                   "Innoactive.Creator.Core.Attributes.ExtendableListAttribute": {
-                                    "$id": "88",
+                                    "$id": "89",
                                     "$type": "Innoactive.Creator.Core.Attributes.ExtendableListAttribute+SerializedTypeWrapper, Innoactive.Creator.Core",
                                     "Type": "Innoactive.Creator.Core.Conditions.ICondition, Innoactive.Creator.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                                   }
@@ -480,28 +479,28 @@
                           }
                         },
                         {
-                          "$id": "89",
+                          "$id": "90",
                           "$type": "Innoactive.Creator.Core.Transition, Innoactive.Creator.Core",
                           "Data": {
-                            "$id": "90",
+                            "$id": "91",
                             "$type": "Innoactive.Creator.Core.Transition+EntityData, Innoactive.Creator.Core",
                             "Conditions": {
-                              "$id": "91",
+                              "$id": "92",
                               "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Conditions.ICondition, Innoactive.Creator.Core]], mscorlib",
                               "$values": [
                                 {
-                                  "$id": "92",
+                                  "$id": "93",
                                   "$type": "Innoactive.Creator.BasicInteraction.Conditions.SnappedCondition, Innoactive.Creator.BasicInteraction",
                                   "Data": {
-                                    "$id": "93",
+                                    "$id": "94",
                                     "$type": "Innoactive.Creator.BasicInteraction.Conditions.SnappedCondition+EntityData, Innoactive.Creator.BasicInteraction",
                                     "Target": {
-                                      "$id": "94",
+                                      "$id": "95",
                                       "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.BasicInteraction.Properties.ISnappableProperty, Innoactive.Creator.BasicInteraction]], Innoactive.Creator.Core",
                                       "UniqueName": "Cube"
                                     },
                                     "ZoneToSnapInto": {
-                                      "$id": "95",
+                                      "$id": "96",
                                       "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.BasicInteraction.Properties.ISnapZoneProperty, Innoactive.Creator.BasicInteraction]], Innoactive.Creator.Core",
                                       "UniqueName": "CubeSnapZone"
                                     },
@@ -512,10 +511,10 @@
                               ]
                             },
                             "TargetStep": {
-                              "$id": "96",
+                              "$id": "97",
                               "$type": "Innoactive.Creator.Core.Step, Innoactive.Creator.Core",
                               "StepMetadata": {
-                                "$id": "97",
+                                "$id": "98",
                                 "$type": "Innoactive.Creator.Core.StepMetadata, Innoactive.Creator.Core",
                                 "Position": {
                                   "x": 399.0,
@@ -523,28 +522,28 @@
                                 }
                               },
                               "Data": {
-                                "$id": "98",
+                                "$id": "99",
                                 "$type": "Innoactive.Creator.Core.Step+EntityData, Innoactive.Creator.Core",
                                 "Name": "Snap Sphere",
-                                "Description": null,
+                                "Description": "Now the sphere has to be put in position.",
                                 "Behaviors": {
-                                  "$id": "99",
+                                  "$id": "100",
                                   "$type": "Innoactive.Creator.Core.BehaviorCollection, Innoactive.Creator.Core",
                                   "Data": {
-                                    "$id": "100",
+                                    "$id": "101",
                                     "$type": "Innoactive.Creator.Core.BehaviorCollection+EntityData, Innoactive.Creator.Core",
                                     "Behaviors": {
-                                      "$id": "101",
+                                      "$id": "102",
                                       "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Behaviors.IBehavior, Innoactive.Creator.Core]], mscorlib",
                                       "$values": [
                                         {
-                                          "$id": "102",
+                                          "$id": "103",
                                           "$type": "Innoactive.Creator.Core.Behaviors.PlayAudioBehavior, Innoactive.Creator.Core",
                                           "Data": {
-                                            "$id": "103",
+                                            "$id": "104",
                                             "$type": "Innoactive.Creator.Core.Behaviors.PlayAudioBehavior+EntityData, Innoactive.Creator.Core",
                                             "AudioData": {
-                                              "$id": "104",
+                                              "$id": "105",
                                               "$type": "Innoactive.Creator.TextToSpeech.Audio.TextToSpeechAudio, Innoactive.Creator.TextToSpeech",
                                               "Text": {
                                                 "key": "",
@@ -563,38 +562,38 @@
                                   }
                                 },
                                 "Transitions": {
-                                  "$id": "105",
+                                  "$id": "106",
                                   "$type": "Innoactive.Creator.Core.TransitionCollection, Innoactive.Creator.Core",
                                   "Data": {
-                                    "$id": "106",
+                                    "$id": "107",
                                     "$type": "Innoactive.Creator.Core.TransitionCollection+EntityData, Innoactive.Creator.Core",
                                     "Transitions": {
-                                      "$id": "107",
+                                      "$id": "108",
                                       "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.ITransition, Innoactive.Creator.Core]], mscorlib",
                                       "$values": [
                                         {
-                                          "$id": "108",
+                                          "$id": "109",
                                           "$type": "Innoactive.Creator.Core.Transition, Innoactive.Creator.Core",
                                           "Data": {
-                                            "$id": "109",
+                                            "$id": "110",
                                             "$type": "Innoactive.Creator.Core.Transition+EntityData, Innoactive.Creator.Core",
                                             "Conditions": {
-                                              "$id": "110",
+                                              "$id": "111",
                                               "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Conditions.ICondition, Innoactive.Creator.Core]], mscorlib",
                                               "$values": [
                                                 {
-                                                  "$id": "111",
+                                                  "$id": "112",
                                                   "$type": "Innoactive.Creator.BasicInteraction.Conditions.SnappedCondition, Innoactive.Creator.BasicInteraction",
                                                   "Data": {
-                                                    "$id": "112",
+                                                    "$id": "113",
                                                     "$type": "Innoactive.Creator.BasicInteraction.Conditions.SnappedCondition+EntityData, Innoactive.Creator.BasicInteraction",
                                                     "Target": {
-                                                      "$id": "113",
+                                                      "$id": "114",
                                                       "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.BasicInteraction.Properties.ISnappableProperty, Innoactive.Creator.BasicInteraction]], Innoactive.Creator.Core",
                                                       "UniqueName": "Sphere"
                                                     },
                                                     "ZoneToSnapInto": {
-                                                      "$id": "114",
+                                                      "$id": "115",
                                                       "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.BasicInteraction.Properties.ISnapZoneProperty, Innoactive.Creator.BasicInteraction]], Innoactive.Creator.Core",
                                                       "UniqueName": "SphereSnapZone"
                                                     },
@@ -610,26 +609,23 @@
                                             "Mode": null,
                                             "IsCompleted": false,
                                             "Metadata": {
-                                              "$id": "115",
+                                              "$id": "116",
                                               "$type": "Innoactive.Creator.Core.Metadata, Innoactive.Creator.Core",
                                               "values": {
-                                                "$id": "116",
+                                                "$id": "117",
                                                 "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
                                                 "Conditions": {
-                                                  "$id": "117",
+                                                  "$id": "118",
                                                   "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
                                                   "Innoactive.Creator.Core.Attributes.FoldableAttribute": true,
                                                   "Innoactive.Creator.Core.Attributes.SeparatedAttribute": null,
                                                   "Innoactive.Creator.Core.Attributes.ListOfAttribute": {
-                                                    "$id": "118",
+                                                    "$id": "119",
                                                     "$type": "Innoactive.Creator.Core.Attributes.ListOfAttribute+Metadata, Innoactive.Creator.Core",
                                                     "ChildAttributes": {
-                                                      "$id": "119",
+                                                      "$id": "120",
                                                       "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Attributes.MetadataAttribute, Innoactive.Creator.Core]], mscorlib",
                                                       "$values": [
-                                                        {
-                                                          "$ref": "75"
-                                                        },
                                                         {
                                                           "$ref": "76"
                                                         },
@@ -639,21 +635,20 @@
                                                       ]
                                                     },
                                                     "ChildMetadata": {
-                                                      "$id": "120",
+                                                      "$id": "121",
                                                       "$type": "System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
                                                       "$values": [
                                                         {
-                                                          "$id": "121",
+                                                          "$id": "122",
                                                           "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
                                                           "Innoactive.Creator.Core.Attributes.FoldableAttribute": true,
-                                                          "Innoactive.Creator.Core.Attributes.DeletableAttribute": null,
-                                                          "Innoactive.Creator.Core.Attributes.SeparatedAttribute": null
+                                                          "Innoactive.Creator.Core.Attributes.DeletableAttribute": null
                                                         }
                                                       ]
                                                     }
                                                   },
                                                   "Innoactive.Creator.Core.Attributes.ExtendableListAttribute": {
-                                                    "$id": "122",
+                                                    "$id": "123",
                                                     "$type": "Innoactive.Creator.Core.Attributes.ExtendableListAttribute+SerializedTypeWrapper, Innoactive.Creator.Core",
                                                     "Type": "Innoactive.Creator.Core.Conditions.ICondition, Innoactive.Creator.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                                                   }
@@ -668,32 +663,34 @@
                                 },
                                 "Current": null,
                                 "Mode": null,
+                                "ToUnlock": {
+                                  "$id": "124",
+                                  "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Behaviors.LockablePropertyReference, Innoactive.Creator.Core]], mscorlib",
+                                  "$values": []
+                                },
                                 "Metadata": null
                               }
                             },
                             "Mode": null,
                             "IsCompleted": false,
                             "Metadata": {
-                              "$id": "123",
+                              "$id": "125",
                               "$type": "Innoactive.Creator.Core.Metadata, Innoactive.Creator.Core",
                               "values": {
-                                "$id": "124",
+                                "$id": "126",
                                 "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
                                 "Conditions": {
-                                  "$id": "125",
+                                  "$id": "127",
                                   "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
                                   "Innoactive.Creator.Core.Attributes.FoldableAttribute": true,
                                   "Innoactive.Creator.Core.Attributes.SeparatedAttribute": null,
                                   "Innoactive.Creator.Core.Attributes.ListOfAttribute": {
-                                    "$id": "126",
+                                    "$id": "128",
                                     "$type": "Innoactive.Creator.Core.Attributes.ListOfAttribute+Metadata, Innoactive.Creator.Core",
                                     "ChildAttributes": {
-                                      "$id": "127",
+                                      "$id": "129",
                                       "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Attributes.MetadataAttribute, Innoactive.Creator.Core]], mscorlib",
                                       "$values": [
-                                        {
-                                          "$ref": "75"
-                                        },
                                         {
                                           "$ref": "76"
                                         },
@@ -703,21 +700,20 @@
                                       ]
                                     },
                                     "ChildMetadata": {
-                                      "$id": "128",
+                                      "$id": "130",
                                       "$type": "System.Collections.Generic.List`1[[System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib]], mscorlib",
                                       "$values": [
                                         {
-                                          "$id": "129",
+                                          "$id": "131",
                                           "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
                                           "Innoactive.Creator.Core.Attributes.FoldableAttribute": true,
-                                          "Innoactive.Creator.Core.Attributes.DeletableAttribute": null,
-                                          "Innoactive.Creator.Core.Attributes.SeparatedAttribute": null
+                                          "Innoactive.Creator.Core.Attributes.DeletableAttribute": null
                                         }
                                       ]
                                     }
                                   },
                                   "Innoactive.Creator.Core.Attributes.ExtendableListAttribute": {
-                                    "$id": "130",
+                                    "$id": "132",
                                     "$type": "Innoactive.Creator.Core.Attributes.ExtendableListAttribute+SerializedTypeWrapper, Innoactive.Creator.Core",
                                     "Type": "Innoactive.Creator.Core.Conditions.ICondition, Innoactive.Creator.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
                                   }
@@ -732,21 +728,26 @@
                 },
                 "Current": null,
                 "Mode": null,
+                "ToUnlock": {
+                  "$id": "133",
+                  "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.Behaviors.LockablePropertyReference, Innoactive.Creator.Core]], mscorlib",
+                  "$values": []
+                },
                 "Metadata": null
               }
             },
             "Steps": {
-              "$id": "131",
+              "$id": "134",
               "$type": "System.Collections.Generic.List`1[[Innoactive.Creator.Core.IStep, Innoactive.Creator.Core]], mscorlib",
               "$values": [
                 {
-                  "$ref": "32"
+                  "$ref": "33"
                 },
                 {
-                  "$ref": "51"
+                  "$ref": "52"
                 },
                 {
-                  "$ref": "96"
+                  "$ref": "97"
                 },
                 {
                   "$ref": "6"
