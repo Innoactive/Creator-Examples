@@ -2,7 +2,7 @@
 	path = Assets/Innoactive/Creator/Core
 	url = git@github.com:Innoactive/Creator.git
 [submodule "Assets/Innoactive/Creator/Basic-Template"]
-	path = Assets/Innoactive/Creator/Basic-Template
+	path = Assets/Innoactive/Creator/Template
 	url = git@github.com:Innoactive/IA-Training-Template.git
 [submodule "Assets/Innoactive/Creator/Components/Basic-Conditions-And-Behaviors"]
 	path = Assets/Innoactive/Creator/Components/Basic-Conditions-And-Behaviors
