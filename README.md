@@ -12,6 +12,12 @@ As a developer, you might want to clone this repository instead of importing the
 git clone git@github.com:Innoactive/XR-Creator-Examples.git
 ```
 
+and go into the Assets folder of the Unity project.
+
+```
+cd XR-Creator-Examples/Assets
+```
+
 ### [Creator Core](https://github.com/Innoactive/Creator)
 
 Every project in this list depends on the Creator Core. It contains fundamental definitions, generally applicable logic, and the visual editor.
