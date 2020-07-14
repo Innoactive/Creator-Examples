@@ -62,6 +62,10 @@ git submodule add git@github.com:Innoactive/TextToSpeech-Component.git Innoactiv
 
 This template makes an initial setup of the Creator, and serves both as example and as a starting point for creating new templates. Every VR training application project includes one template.
 
+```
+git submodule add git@github.com:Innoactive/Creator-Base-Template.git Innoactive/Creator/Base-Template
+```
+
 ## Documentation
 
 Start with [this page](http://developers.innoactive.de/documentation/creator/latest/articles/getting-started/index.html) and then proceed with our [developer's guide](http://developers.innoactive.de/documentation/creator/latest/articles/developer/index.html). This way you will get familiar with our tool and will know how to configure and extend it.
