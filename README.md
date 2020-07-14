@@ -66,6 +66,8 @@ This template makes an initial setup of the Creator, and serves both as example 
 
 Start with [this page](http://developers.innoactive.de/documentation/creator/latest/articles/getting-started/index.html) and then proceed with our [developer's guide](http://developers.innoactive.de/documentation/creator/latest/articles/developer/index.html). This way you will get familiar with our tool and will know how to configure and extend it.
 
+An overview of the example courses provided can be found [here](http://developers.innoactive.de/documentation/creator/v2.0.0/articles/innoactive-creator/examples.html/).
+
 ## Contributing
 
 See our [contributor's guide](.github/CONTRIBUTING.md).
