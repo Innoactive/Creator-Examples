@@ -28,7 +28,7 @@ git submodule add git@github.com:Innoactive/Creator.git Innoactive/Creator/Core
 
 ### [Basic Conditions and Behaviors Component](https://github.com/Innoactive/Basic-Conditions-And-Behaviors)
 
-This component contains very simple conditions and behaviors that involve no interaction with trainees. For example, a condition on a timer, or a behavior that moves its target object. 
+This component contains simple conditions, and behaviors that involve no interaction with trainees. For example, a condition on a timer, or a behavior that moves its target object. 
 
 ```
 git submodule add git@github.com:Innoactive/Basic-Conditions-And-Behaviors.git Innoactive/Creator/Components/Basic-Conditions-And-Behaviors-Component
@@ -52,7 +52,7 @@ git submodule add git@github.com:Innoactive/XR-Interaction-Component.git Innoact
 
 ### [Text-To-Speech Component](https://github.com/Innoactive/TextToSpeech-Component)
 
-This component uses text-to-speech engines so designers could generate audio instructions for trainees.
+This component uses text-to-speech engines allowing designers to generate audio instructions for trainees.
 
 ```
 git submodule add git@github.com:Innoactive/TextToSpeech-Component.git Innoactive/Creator/Components/TextToSpeech-Component
