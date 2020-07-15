@@ -1176,10 +1176,30 @@ PrefabInstance:
       propertyPath: uniqueName
       value: Trainee
       objectReference: {fileID: 0}
+    - target: {fileID: 7978014070459812427, guid: 6009b435b2dba3240b74f29999f3e3e0,
+        type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 16384
+      objectReference: {fileID: 0}
+    - target: {fileID: 7978014070459812427, guid: 6009b435b2dba3240b74f29999f3e3e0,
+        type: 3}
+      propertyPath: m_InteractionLayerMask.m_Bits
+      value: 16384
+      objectReference: {fileID: 0}
     - target: {fileID: 7978014070532965596, guid: 6009b435b2dba3240b74f29999f3e3e0,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7978014071796457455, guid: 6009b435b2dba3240b74f29999f3e3e0,
+        type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 16384
+      objectReference: {fileID: 0}
+    - target: {fileID: 7978014071796457455, guid: 6009b435b2dba3240b74f29999f3e3e0,
+        type: 3}
+      propertyPath: m_InteractionLayerMask.m_Bits
+      value: 16384
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6009b435b2dba3240b74f29999f3e3e0, type: 3}
@@ -1194,7 +1214,7 @@ GameObject:
   - component: {fileID: 4269235513004856}
   - component: {fileID: 33338922577520940}
   - component: {fileID: 23105197850118276}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Logo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1249,7 +1269,7 @@ GameObject:
   - component: {fileID: 33442859878361144}
   - component: {fileID: 23910530878640664}
   - component: {fileID: 783474103}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Railing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1268,7 +1288,7 @@ GameObject:
   - component: {fileID: 33962101277785526}
   - component: {fileID: 23903916346333790}
   - component: {fileID: 65684561618044956}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1339,7 +1359,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4361900901018428}
   - component: {fileID: 8373766031619310580}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Environment01v
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1377,7 +1397,7 @@ GameObject:
   - component: {fileID: 33360239272950106}
   - component: {fileID: 23142257452729520}
   - component: {fileID: 783474102}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1478,6 +1498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f84f2b8a43cb84abcf29d7e444d45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lockOnParentObjectLock: 1
   lockObjectOnSnap: 0
 --- !u!114 &1787239855000319
 MonoBehaviour:
@@ -1673,6 +1694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10f84f2b8a43cb84abcf29d7e444d45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lockOnParentObjectLock: 1
   lockObjectOnSnap: 0
 --- !u!114 &1895290727044188
 MonoBehaviour:
@@ -2950,7 +2972,7 @@ GameObject:
   - component: {fileID: 1084381263167607145}
   - component: {fileID: 278994117606200740}
   - component: {fileID: 5078283502365286867}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: HighlightFence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3035,7 +3057,7 @@ MonoBehaviour:
   - {fileID: 65684561618044956}
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 16384
   m_OnFirstHoverEnter:
     m_PersistentCalls:
       m_Calls:

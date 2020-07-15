@@ -97,7 +97,7 @@
                             "PositionProvider": {
                               "$id": "21",
                               "$type": "Innoactive.Creator.Core.SceneObjects.SceneObjectReference, Innoactive.Creator.Core",
-                              "UniqueName": ""
+                              "UniqueName": "The Sky"
                             },
                             "Duration": 5.0,
                             "Metadata": null,

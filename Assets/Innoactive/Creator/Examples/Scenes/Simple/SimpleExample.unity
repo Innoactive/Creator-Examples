@@ -695,7 +695,7 @@ GameObject:
   - component: {fileID: 1715698420}
   - component: {fileID: 1715698419}
   - component: {fileID: 1715698423}
-  m_Layer: 8
+  m_Layer: 14
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -793,7 +793,7 @@ MonoBehaviour:
   m_Colliders: []
   m_InteractionLayerMask:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 16384
   m_OnFirstHoverEnter:
     m_PersistentCalls:
       m_Calls:
