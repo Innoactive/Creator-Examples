@@ -177,14 +177,6 @@ stages:
             StreamingAssets/**
           TargetFolder: '$(Path.Project)/Assets'
         displayName: Copy XR Examples Streaming Assets
-
-      - task: CopyFiles@2
-        inputs:
-          SourceFolder: 'XR-Creator-Examples'
-          Contents: |
-            ProjectSettings/**
-          TargetFolder: '$(Path.Project)'
-        displayName: Copy XR Examples Project Settings
       
       - task: DeleteFiles@1
         inputs:
