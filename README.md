@@ -6,15 +6,71 @@ This repository is a showcase for the [Innoactive Creator](https://github.com/In
 
 Refer to our [Getting Started](http://developers.innoactive.de/documentation/creator/latest/articles/getting-started/index.html) guide.
 
-As a developer, you might want to clone this repository instead of importing the Unity package. Given that you have launched Git BASH inside the folder you want to have this Unity project, execute the following command:
+As a developer, you might want to clone this repository and add all required components as submodules instead of importing the Unity package. Given that you have launched Git BASH inside the folder you want to have this Unity project, first clone the repository:
 
 ```
-git clone --recurse-submodules -j8 git@github.com:Innoactive/XR-Creator-Examples.git
+git clone git@github.com:Innoactive/XR-Creator-Examples.git
+```
+
+and go into the Assets folder of the Unity project.
+
+```
+cd XR-Creator-Examples/Assets
+```
+
+### [Creator Core](https://github.com/Innoactive/Creator)
+
+Every project in this list depends on the Creator Core. It contains fundamental definitions, generally applicable logic, and the visual editor.
+
+```
+git submodule add git@github.com:Innoactive/Creator.git Innoactive/Creator/Core
+```
+
+### [Basic Conditions and Behaviors Component](https://github.com/Innoactive/Basic-Conditions-And-Behaviors)
+
+This component contains simple conditions, and behaviors that involve no interaction with trainees. For example, a condition on a timer, or a behavior that moves its target object. 
+
+```
+git submodule add git@github.com:Innoactive/Basic-Conditions-And-Behaviors.git Innoactive/Creator/Components/Basic-Conditions-And-Behaviors-Component
+```
+
+### [Basic Interaction Component](https://github.com/Innoactive/Basic-Interaction-Component)
+
+This component is an abstraction layer between the Creator Core and a component that would implement user interactions.
+
+```
+git submodule add git@github.com:Innoactive/Basic-Interaction-Component.git Innoactive/Creator/Components/Basic-Interaction 
+```
+
+### [Unity XR Interaction Component](https://github.com/Innoactive/XR-Interaction-Component)
+
+This component implements user interactions in VR by using the Unity XR framework. Include the Basic Interaction component along this repository to your project to let designers create training applications for VR.
+
+```
+git submodule add git@github.com:Innoactive/XR-Interaction-Component.git Innoactive/Creator/Components/XR-Interaction-Component
+```
+
+### [Text-To-Speech Component](https://github.com/Innoactive/TextToSpeech-Component)
+
+This component uses text-to-speech engines allowing designers to generate audio instructions for trainees.
+
+```
+git submodule add git@github.com:Innoactive/TextToSpeech-Component.git Innoactive/Creator/Components/TextToSpeech-Component
+```
+
+### [Base Template](https://github.com/Innoactive/Creator-Base-Template)
+
+This template makes an initial setup of the Creator, and serves both as example and as a starting point for creating new templates. Every VR training application project includes one template.
+
+```
+git submodule add git@github.com:Innoactive/Creator-Base-Template.git Innoactive/Creator/Base-Template
 ```
 
 ## Documentation
 
 Start with [this page](http://developers.innoactive.de/documentation/creator/latest/articles/getting-started/index.html) and then proceed with our [developer's guide](http://developers.innoactive.de/documentation/creator/latest/articles/developer/index.html). This way you will get familiar with our tool and will know how to configure and extend it.
+
+An overview of the example courses provided can be found [here](http://developers.innoactive.de/documentation/creator/v2.0.0/articles/innoactive-creator/examples.html).
 
 ## Contributing
 
