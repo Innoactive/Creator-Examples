@@ -52,7 +52,7 @@
                               "$type": "Innoactive.Creator.TextToSpeech.Audio.TextToSpeechAudio, Innoactive.Creator.TextToSpeech",
                               "Text": {
                                 "key": "move_cube",
-                                "defaultText": "Obacht! Der mächtige Würfel fliegt davon!",
+                                "defaultText": "Behold! The mighty flying cube!",
                                 "formatParams": []
                               }
                             },
@@ -73,7 +73,7 @@
                               "$type": "Innoactive.Creator.TextToSpeech.Audio.TextToSpeechAudio, Innoactive.Creator.TextToSpeech",
                               "Text": {
                                 "key": "training_complete",
-                                "defaultText": "Glückwunsch! Du hast das Training erfolgreich absolviert.",
+                                "defaultText": "Congratulations! The training is complete.",
                                 "formatParams": []
                               }
                             },
@@ -97,7 +97,7 @@
                             "PositionProvider": {
                               "$id": "21",
                               "$type": "Innoactive.Creator.Core.SceneObjects.SceneObjectReference, Innoactive.Creator.Core",
-                              "UniqueName": ""
+                              "UniqueName": "The Sky"
                             },
                             "Duration": 5.0,
                             "Metadata": null,
@@ -240,7 +240,7 @@
                               "$type": "Innoactive.Creator.TextToSpeech.Audio.TextToSpeechAudio, Innoactive.Creator.TextToSpeech",
                               "Text": {
                                 "key": "grab_sphere",
-                                "defaultText": "Bitte nimm die Kugel auf, indem du die seitlichen Knöpfe am Controller gedrückt hältst.",
+                                "defaultText": "Please, grab the sphere using the side button of your controller.",
                                 "formatParams": []
                               }
                             },
@@ -330,7 +330,7 @@
                                               "$type": "Innoactive.Creator.TextToSpeech.Audio.TextToSpeechAudio, Innoactive.Creator.TextToSpeech",
                                               "Text": {
                                                 "key": "put_sphere",
-                                                "defaultText": "Bring die Kugel nun bitte zu dem Würfel.",
+                                                "defaultText": "Please, move the sphere closer to the cube.",
                                                 "formatParams": []
                                               }
                                             },
