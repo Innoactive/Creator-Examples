@@ -113,6 +113,14 @@ stages:
             Write-Host "##vso[task.setvariable variable=Version]$TAG"
           workingDirectory: "Creator/"
 
+      - task: PowerShell@2
+        displayName: Publish variables
+        inputs:
+          targetType: 'inline'
+          script: |
+            echo "##vso[task.setvariable variable=Version;isOutput=true]v$(Version)"
+        name: ExportedVariables
+
       - task: CopyFiles@2
         inputs:
           SourceFolder: 'Empty-Unity-Project-2019/'
