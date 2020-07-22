@@ -34,7 +34,7 @@ resources:
     type: github
     endpoint: Innoactive
     name: Innoactive/Empty-Unity-Project-2019
-    ref: develop
+    ref: fix/export-version
 
 trigger:
     - master
