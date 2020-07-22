@@ -99,7 +99,7 @@ stages:
           targetType: 'inline'
           script: |
             npx -p semantic-release-ado semantic-release
-          workingDirectory: "Creator/"
+          workingDirectory: "XR-Creator-Examples/"
         env:
           GH_TOKEN: "$(GITHUB_TOKEN)"
 
@@ -111,7 +111,7 @@ stages:
           script: |
             $TAG = (git describe --all --match "v*").Replace("tags/", "").TrimStart("v")
             Write-Host "##vso[task.setvariable variable=Version]$TAG"
-          workingDirectory: "Creator/"
+          workingDirectory: "XR-Creator-Examples/"
 
       - task: PowerShell@2
         displayName: Publish variables
