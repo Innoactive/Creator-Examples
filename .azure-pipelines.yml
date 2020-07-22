@@ -34,7 +34,7 @@ resources:
     type: github
     endpoint: Innoactive
     name: Innoactive/Empty-Unity-Project-2019
-    ref: fix/export-version
+    ref: develop
 
 trigger:
     - master
@@ -94,7 +94,7 @@ stages:
 
       - task: PowerShell@2
         displayName: "Run Semantic release"
-        condition: eq(variables['Build.SourceBranchName'], 'develop')
+        condition: eq(variables['Build.SourceBranchName'], 'master')
         inputs:
           targetType: 'inline'
           script: |
@@ -105,7 +105,7 @@ stages:
 
       - task: PowerShell@2
         displayName: Fetch version from git
-        condition: ne(variables['Build.SourceBranchName'], 'develop')
+        condition: ne(variables['Build.SourceBranchName'], 'master')
         inputs:
           targetType: 'inline'
           script: |
