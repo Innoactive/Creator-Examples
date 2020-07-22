@@ -94,7 +94,7 @@ stages:
 
       - task: PowerShell@2
         displayName: "Run Semantic release"
-        condition: eq(variables['Build.SourceBranchName'], 'master')
+        condition: eq(variables['Build.SourceBranchName'], 'develop')
         inputs:
           targetType: 'inline'
           script: |
@@ -105,7 +105,7 @@ stages:
 
       - task: PowerShell@2
         displayName: Fetch version from git
-        condition: ne(variables['Build.SourceBranchName'], 'master')
+        condition: ne(variables['Build.SourceBranchName'], 'develop')
         inputs:
           targetType: 'inline'
           script: |
