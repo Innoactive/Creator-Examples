@@ -109,7 +109,6 @@ stages:
         inputs:
           targetType: 'inline'
           script: |
-            $TAG = (git describe --all --match "v*").Replace("tags/", "").TrimStart("v")
             $TAG = (git tag --sort=committerdate | Select -last 1)
             if(!$TAG) { $TAG = "v0.0.0" }
             $TAG = $TAG.TrimStart("v") + "-" + (git log -1 --pretty=format:%h)
