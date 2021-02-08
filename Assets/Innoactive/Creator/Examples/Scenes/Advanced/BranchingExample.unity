@@ -1097,11 +1097,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleInteractionRigs:
+  - Name: XR Simulator
+    Enabled: 1
   - Name: XR Legacy Rig
     Enabled: 1
   - Name: XR Rig
-    Enabled: 1
-  - Name: XR Simulator
     Enabled: 1
   - Name: <None>
     Enabled: 1
