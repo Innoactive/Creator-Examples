@@ -99,7 +99,7 @@ stages:
           targetType: 'inline'
           script: |
             npx -p semantic-release-ado semantic-release
-          workingDirectory: "XR-Creator-Examples/"
+          workingDirectory: "Creator-Examples/"
         env:
           GH_TOKEN: "$(GITHUB_TOKEN)"
 
@@ -113,7 +113,7 @@ stages:
             if(!$TAG) { $TAG = "v0.0.0" }
             $TAG = $TAG.TrimStart("v") + "-" + (git log -1 --pretty=format:%h)
             Write-Host "##vso[task.setvariable variable=Version]$TAG"
-          workingDirectory: "XR-Creator-Examples/"
+          workingDirectory: "Creator-Examples/"
 
       - task: PowerShell@2
         displayName: Publish variables
@@ -174,14 +174,14 @@ stages:
 
       - task: CopyFiles@2
         inputs:
-          SourceFolder: 'XR-Creator-Examples/Assets/Innoactive/Creator/Examples'
+          SourceFolder: 'Creator-Examples/Assets/Innoactive/Creator/Examples'
           Contents: '**'
           TargetFolder: '$(Path.Creator)/Examples'
         displayName: Copy XR Examples
 
       - task: CopyFiles@2
         inputs:
-          SourceFolder: 'XR-Creator-Examples/Assets'
+          SourceFolder: 'Creator-Examples/Assets'
           Contents: |
             StreamingAssets.meta
             StreamingAssets/**
@@ -229,7 +229,7 @@ stages:
         displayName: "Publish Unity Package"
         inputs:
             targetPath: "$(Build.ArtifactStagingDirectory)/packages/"
-            artifact: "xr-creator-examples-unitypackage"
+            artifact: "Creator-Examples-unitypackage"
             publishLocation: "pipeline"
 
       - task: PublishPipelineArtifact@1
@@ -237,7 +237,7 @@ stages:
         condition: always()
         inputs:
             targetPath: "$(Build.ArtifactStagingDirectory)/logs/"
-            artifact: "xr-creator-examples-logs-$(System.JobId)"
+            artifact: "Creator-Examples-logs-$(System.JobId)"
             publishLocation: "pipeline"
 
   - stage: Release
@@ -257,13 +257,13 @@ stages:
               displayName: 'Download exported package'
               inputs:
                 buildType: 'current'
-                artifactName: 'xr-creator-examples-unitypackage'
+                artifactName: 'Creator-Examples-unitypackage'
                 targetPath: '$(Build.ArtifactStagingDirectory)/packages/'
 
             - task: GitHubRelease@1
               inputs:
                 gitHubConnection: 'Github.com - Jenkins / CI User'
-                repositoryName: 'Innoactive/XR-Creator-Examples'
+                repositoryName: 'Innoactive/Creator-Examples'
                 action: 'edit'
                 target: '$(Build.SourceVersion)'
                 tag: '$(Version)'
