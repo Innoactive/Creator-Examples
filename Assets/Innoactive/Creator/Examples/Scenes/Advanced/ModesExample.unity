@@ -782,8 +782,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ef5789d95ab46e095b834b7c4789068, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runtimeConfigurationName: Innoactive.Creator.Core.Configuration.DefaultRuntimeConfiguration,
-    Innoactive.Creator.Core, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  runtimeConfigurationName: Innoactive.Hub.Training.Examples.Configuration.ModesExampleRuntimeConfiguration,
+    Innoactive.Creator.Examples, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   selectedCourseStreamingAssetsPath: Training/ModesExample/ModesExample.json
 --- !u!4 &1050218734
 Transform:
@@ -1001,7 +1001,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f391ac734d94ea34697b6cde3269f11a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uniqueName: '[TRAINEE](Clone)'
+  uniqueName: Trainee
 --- !u!4 &1825599792
 Transform:
   m_ObjectHideFlags: 0
