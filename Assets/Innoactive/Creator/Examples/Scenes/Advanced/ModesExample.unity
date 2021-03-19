@@ -785,7 +785,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1516431268022652, guid: 80b7be1c3b72d0641a40a1b6c417e273, type: 3}
       propertyPath: m_Name
-      value: Environment01v
+      value: Environment
       objectReference: {fileID: 0}
     - target: {fileID: 4361901701486416, guid: 80b7be1c3b72d0641a40a1b6c417e273, type: 3}
       propertyPath: m_RootOrder
