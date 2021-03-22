@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eda388a2c74904840b2dde751d4d7d25, type: 3}
   m_Name: CreatorProjectSettings
   m_EditorClassIdentifier: 
+  IsFirstTimeStarted: 0
+  ProjectCreatorVersion: unknown
   IsValidationEnabled: 1
   DebugValidationSystem: 0
-  IsFirstTimeStarted: 0
-  ProjectCreatorVersion: v2.9.0

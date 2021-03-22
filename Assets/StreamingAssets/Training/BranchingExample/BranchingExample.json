@@ -836,7 +836,7 @@
               "$id": "151",
               "$type": "Innoactive.Creator.Core.ChapterMetadata, Innoactive.Creator.Core",
               "LastSelectedStep": {
-                "$ref": "56"
+                "$ref": "3"
               },
               "EntryNodePosition": {
                 "x": 0.0,
