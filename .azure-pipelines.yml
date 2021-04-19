@@ -99,7 +99,7 @@ stages:
           targetType: 'inline'
           script: |
             npx -p semantic-release-ado semantic-release
-          workingDirectory: "XR-Creator-Examples/"
+          workingDirectory: "Creator-Examples/"
         env:
           GH_TOKEN: "$(GITHUB_TOKEN)"
 
@@ -109,9 +109,11 @@ stages:
         inputs:
           targetType: 'inline'
           script: |
-            $TAG = (git describe --all --match "v*").Replace("tags/", "").TrimStart("v")
+            $TAG = (git tag -l "v*" --sort=committerdate | Select -last 1)
+            if(!$TAG) { $TAG = "v0.0.0" }
+            $TAG = $TAG.TrimStart("v") + "-" + (git log -1 --pretty=format:%h)
             Write-Host "##vso[task.setvariable variable=Version]$TAG"
-          workingDirectory: "XR-Creator-Examples/"
+          workingDirectory: "Creator-Examples/"
 
       - task: PowerShell@2
         displayName: Publish variables
@@ -172,14 +174,14 @@ stages:
 
       - task: CopyFiles@2
         inputs:
-          SourceFolder: 'XR-Creator-Examples/Assets/Innoactive/Creator/Examples'
+          SourceFolder: 'Creator-Examples/Assets/Innoactive/Creator/Examples'
           Contents: '**'
           TargetFolder: '$(Path.Creator)/Examples'
         displayName: Copy XR Examples
 
       - task: CopyFiles@2
         inputs:
-          SourceFolder: 'XR-Creator-Examples/Assets'
+          SourceFolder: 'Creator-Examples/Assets'
           Contents: |
             StreamingAssets.meta
             StreamingAssets/**
@@ -219,7 +221,7 @@ stages:
           targetType: 'inline'
           script: |
             echo 'Exporting version $(Version)'
-            ((Get-Content -path $(Path.ExportConfig)/$(ExportConfigName) -Raw) -replace '{version}','$(Version)') | Set-Content -Path $(Path.Project)/export-config.json
+            ((Get-Content -path $(Path.ExportConfig)/$(ExportConfigName) -Raw) -replace '{version}','v$(Version)') | Set-Content -Path $(Path.Project)/export-config.json
             u3d run -u $(UnityVersion) -- -logFile $(Build.ArtifactStagingDirectory)/logs/editor_export.log -batchmode -quit -executeMethod Innoactive.CreatorEditor.PackageExporter.Export --export-config export-config.json
             Start-Sleep -s 5
 
@@ -227,7 +229,7 @@ stages:
         displayName: "Publish Unity Package"
         inputs:
             targetPath: "$(Build.ArtifactStagingDirectory)/packages/"
-            artifact: "xr-creator-examples-unitypackage"
+            artifact: "Creator-Examples-unitypackage"
             publishLocation: "pipeline"
 
       - task: PublishPipelineArtifact@1
@@ -235,7 +237,7 @@ stages:
         condition: always()
         inputs:
             targetPath: "$(Build.ArtifactStagingDirectory)/logs/"
-            artifact: "xr-creator-examples-logs-$(System.JobId)"
+            artifact: "Creator-Examples-logs-$(System.JobId)"
             publishLocation: "pipeline"
 
   - stage: Release
@@ -255,13 +257,13 @@ stages:
               displayName: 'Download exported package'
               inputs:
                 buildType: 'current'
-                artifactName: 'xr-creator-examples-unitypackage'
+                artifactName: 'Creator-Examples-unitypackage'
                 targetPath: '$(Build.ArtifactStagingDirectory)/packages/'
 
             - task: GitHubRelease@1
               inputs:
                 gitHubConnection: 'Github.com - Jenkins / CI User'
-                repositoryName: 'Innoactive/XR-Creator-Examples'
+                repositoryName: 'Innoactive/Creator-Examples'
                 action: 'edit'
                 target: '$(Build.SourceVersion)'
                 tag: '$(Version)'
