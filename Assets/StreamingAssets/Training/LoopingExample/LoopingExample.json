@@ -47,6 +47,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Play Audio",
                       "IsBlocking": true
@@ -190,6 +191,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Play Audio",
                       "IsBlocking": false
@@ -352,6 +354,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Play Audio",
                       "IsBlocking": false
@@ -403,14 +406,15 @@
                             "Data": {
                               "$id": "76",
                               "$type": "Innoactive.Creator.Core.Conditions.ObjectInRangeCondition+EntityData, Innoactive.Creator.Core",
+                              "DistanceDetector": null,
                               "Target": {
                                 "$id": "77",
                                 "$type": "Innoactive.Creator.Core.SceneObjects.SceneObjectReference, Innoactive.Creator.Core",
                                 "UniqueName": "Sphere"
                               },
-                              "DistanceDetector": {
+                              "ReferenceProperty": {
                                 "$id": "78",
-                                "$type": "Innoactive.Creator.Core.SceneObjects.SceneObjectReference, Innoactive.Creator.Core",
+                                "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.Core.Properties.TransformInRangeDetectorProperty, Innoactive.Creator.Core]], Innoactive.Creator.Core",
                                 "UniqueName": "Cube"
                               },
                               "Range": 1.0,
@@ -628,6 +632,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Play Audio",
                       "IsBlocking": true
@@ -777,6 +782,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Play Audio",
                       "IsBlocking": true

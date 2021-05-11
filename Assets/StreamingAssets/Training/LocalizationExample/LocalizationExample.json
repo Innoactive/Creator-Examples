@@ -47,6 +47,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Audio Help",
                       "IsBlocking": false
@@ -215,6 +216,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Audio Help",
                       "IsBlocking": false
@@ -250,14 +252,15 @@
                             "Data": {
                               "$id": "49",
                               "$type": "Innoactive.Creator.Core.Conditions.ObjectInRangeCondition+EntityData, Innoactive.Creator.Core",
+                              "DistanceDetector": null,
                               "Target": {
                                 "$id": "50",
                                 "$type": "Innoactive.Creator.Core.SceneObjects.SceneObjectReference, Innoactive.Creator.Core",
                                 "UniqueName": "Sphere"
                               },
-                              "DistanceDetector": {
+                              "ReferenceProperty": {
                                 "$id": "51",
-                                "$type": "Innoactive.Creator.Core.SceneObjects.SceneObjectReference, Innoactive.Creator.Core",
+                                "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.Core.Properties.TransformInRangeDetectorProperty, Innoactive.Creator.Core]], Innoactive.Creator.Core",
                                 "UniqueName": "Cube"
                               },
                               "Range": 1.5,
@@ -383,6 +386,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Audio Help",
                       "IsBlocking": false
@@ -404,6 +408,7 @@
                         }
                       },
                       "ExecutionStages": 2,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Audio On Success",
                       "IsBlocking": true

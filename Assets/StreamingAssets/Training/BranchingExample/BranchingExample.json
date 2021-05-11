@@ -47,6 +47,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Play Audio",
                       "IsBlocking": false
@@ -297,7 +298,7 @@
               "TabsGroup": {
                 "$id": "55",
                 "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
-                "selected": 1
+                "selected": 2
               }
             }
           }
@@ -310,8 +311,8 @@
           "$id": "57",
           "$type": "Innoactive.Creator.Core.StepMetadata, Innoactive.Creator.Core",
           "Position": {
-            "x": 394.0,
-            "y": -130.0
+            "x": 390.0,
+            "y": -128.0
           }
         },
         "Data": {
@@ -345,6 +346,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Play Audio",
                       "IsBlocking": false
@@ -485,7 +487,7 @@
               "TabsGroup": {
                 "$id": "88",
                 "$type": "System.Collections.Generic.Dictionary`2[[System.String, mscorlib],[System.Object, mscorlib]], mscorlib",
-                "selected": 1
+                "selected": 2
               }
             }
           }
@@ -533,6 +535,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Play Audio",
                       "IsBlocking": false
@@ -721,6 +724,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Play Audio",
                       "IsBlocking": true
