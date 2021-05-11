@@ -47,6 +47,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Play Audio",
                       "IsBlocking": false
@@ -215,6 +216,7 @@
                         }
                       },
                       "ExecutionStages": 1,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Play Audio",
                       "IsBlocking": false
@@ -236,6 +238,7 @@
                         }
                       },
                       "ExecutionStages": 2,
+                      "Volume": 1.0,
                       "Metadata": null,
                       "Name": "Play Audio On Success",
                       "IsBlocking": true

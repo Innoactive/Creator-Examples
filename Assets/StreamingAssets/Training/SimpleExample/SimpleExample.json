@@ -213,14 +213,15 @@
                             "Data": {
                               "$id": "44",
                               "$type": "Innoactive.Creator.Core.Conditions.ObjectInRangeCondition+EntityData, Innoactive.Creator.Core",
+                              "DistanceDetector": null,
                               "Target": {
                                 "$id": "45",
                                 "$type": "Innoactive.Creator.Core.SceneObjects.SceneObjectReference, Innoactive.Creator.Core",
                                 "UniqueName": "Sphere"
                               },
-                              "DistanceDetector": {
+                              "ReferenceProperty": {
                                 "$id": "46",
-                                "$type": "Innoactive.Creator.Core.SceneObjects.SceneObjectReference, Innoactive.Creator.Core",
+                                "$type": "Innoactive.Creator.Core.SceneObjects.ScenePropertyReference`1[[Innoactive.Creator.Core.Properties.TransformInRangeDetectorProperty, Innoactive.Creator.Core]], Innoactive.Creator.Core",
                                 "UniqueName": "Cube"
                               },
                               "Range": 1.5,
